@@ -68,7 +68,7 @@ function App(): JSX.Element {
         barStyle={isDarkMode ? 'light-content' : 'dark-content'}
         backgroundColor={backgroundStyle.backgroundColor}
       />
-      <Text>Hello World!</Text>
+      <Text>Hello World! - Prashad</Text>
     </SafeAreaView>
   );
 }
