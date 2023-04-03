@@ -5,6 +5,7 @@ import {
   TouchableOpacity,
   Image,
   ImageBackground,
+  ScrollView,
 } from 'react-native';
 import React from 'react';
 import {Link, useNavigation} from '@react-navigation/native';
@@ -14,20 +15,20 @@ const WelcomeScreen = () => {
   const navigation = useNavigation();
 
   return (
-    <View className="">
+    <View className="flex-1">
       <ImageBackground
         source={require('../assets/images/Home-BG.png')}
         resizeMode="stretch"
-        className="h-[350] w-full flex items-center justify-end">
+        className=" flex-1 items-center justify-end">
         <Image
-          className="h-[310] w-[310]"
+          className="h-[70%] w-[70%]"
           source={require('../assets/images/Home-Girl.png')}
         />
       </ImageBackground>
 
       {/* second section */}
-      <View className="pt-4 px-6">
-        <View className="flex items-center">
+      <View className="flex-1 pt-4 px-6 z-50">
+        <View className="flex-1 items-center">
           <Text
             className={`font-semibold text-xl text-[${misc.PRIMARY_TEXT}]`}
             style={{color: misc.PRIMARY_TEXT}}>
@@ -39,7 +40,7 @@ const WelcomeScreen = () => {
           </Text>
         </View>
 
-        <View className="mt-36 px-4">
+        <View className="flex-1 mt-8 px-4">
           <View className="flex-row items-center justify-around">
             <TouchableOpacity
               onPress={() => {
@@ -54,7 +55,7 @@ const WelcomeScreen = () => {
             </TouchableOpacity>
           </View>
 
-          <View className="items-center mt-16">
+          <View className="items-center mt-12">
             <TouchableOpacity>
               <Text className="text-black underline text-md font-semibold">
                 Take tour as a guest
