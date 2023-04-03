@@ -45,11 +45,11 @@ const WelcomeScreen = () => {
               onPress={() => {
                 navigation.navigate('LoginScreen');
               }}
-              className={`border px-14 py-3 rounded-lg bg-[${misc.BUTTON_BLACK}]`}>
+              className={`border px-11 py-3 rounded-lg bg-[#222222]`}>
               <Text className="text-white font-semibold">Log in</Text>
             </TouchableOpacity>
 
-            <TouchableOpacity className={`border px-14 py-3 rounded-lg`}>
+            <TouchableOpacity className={`border px-11 py-3 rounded-lg`}>
               <Text className="font-semibold text-black">Sign up</Text>
             </TouchableOpacity>
           </View>
